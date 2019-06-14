@@ -1,0 +1,28 @@
+.app__content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5rem;
+    height: 840px;
+    overflow-y: scroll;
+    margin-top: -50px;
+  }
+
+  .app__content p {
+    display: -webkit-box;
+    max-height: 40px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 40px;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .error {
+    grid-column: 1 / span 3;
+    color: white;
+  }
