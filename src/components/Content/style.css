@@ -22,7 +22,9 @@
     width: 0px;
   }
 
-  .error {
+  .app__content p.error {
     grid-column: 1 / span 3;
     color: white;
+    display: unset;
+    overflow: unset;
   }

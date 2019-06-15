@@ -1,6 +1,7 @@
 .app__header {
     height: 100px;
     position: relative;
+    border-radius: 1rem;
     background: rgba(0,0,0,1);
     transition: background .3 ease-in;
     background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 72%, rgba(0,0,0,0) 100%);
