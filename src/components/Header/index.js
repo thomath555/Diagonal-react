@@ -26,11 +26,22 @@ class AppHeader extends Component {
       return (
           <div className="app__header px-6 pb-12 flex items-end" id="header">
               <div className="app__header-back">
-                  <img className="w-8 pb-2" onClick={this.__onClickHandler} src={Back} alt="back-btn"/>
+                  <img className="w-8 pb-2"
+                    onClick={this.__onClickHandler}
+                    src={Back}
+                    alt="back-btn"
+                  />
               </div>
-              <input className="px-8 font-normal text-4xl" type="text" placeholder="Search" value={searchValue} onChange={this.__onChangeHandler}/>
+              <input className="px-8 font-normal text-4xl"
+                type="text" placeholder="Search"
+                value={searchValue}
+                onChange={this.__onChangeHandler}
+              />
               <div className="app__header-search">
-                  <img className="w-8 pb-2" src={Search} alt="search-btn"/>
+                  <img className="w-8 pb-2"
+                    src={Search}
+                    alt="search-btn"
+                  />
               </div>
           </div>
       );

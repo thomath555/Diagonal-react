@@ -1,10 +1,4 @@
 import axios from 'axios'
-export const incrementCounter = () => {
-    return {
-        type: 'INC',
-        value:5
-    }
-}
 
 const apiDataSettings = (data) => {
     return {

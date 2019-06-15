@@ -73,14 +73,22 @@ class AppContent extends Component {
                 searchDataSet.length ?
                 searchDataSet.map( (movie,index) => (
                   <div key={index} className="movie-single pb-8">
-                    <img src={`/assets/img/poster/${movie['poster-image']}`} alt={`${movie['poster-image']}`} onError={() => {this.onImgError('search', index)}}/>
+                    <img
+                      src={`/assets/img/poster/${movie['poster-image']}`}
+                      alt={`${movie['poster-image']}`}
+                      onError={() => {this.onImgError('search', index)}}
+                    />
                     <p className="text-3xl text-gray-500 pt-2 font-light">{movie.name}</p>
                   </div>
                 )):
                 <p className="error text-center text-white text-3xl mt-16">Not found. Please try another movie !!!!</p> :
                 dataSet && dataSet.length && dataSet.map( (movie,index) => (
                   <div key={index} className="movie-single pb-8">
-                    <img src={`/assets/img/poster/${movie['poster-image']}`} alt={`${movie['poster-image']}`} onError={() => {this.onImgError('full', index)}}/>
+                    <img
+                      src={`/assets/img/poster/${movie['poster-image']}`}
+                      alt={`${movie['poster-image']}`}
+                      onError={() => {this.onImgError('full', index)}}
+                    />
                     <p className="text-3xl text-gray-500 pt-2 font-light">{movie.name}</p>
                   </div>
                 ))
